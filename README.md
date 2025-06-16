@@ -3,10 +3,16 @@
 
 Это шаблон веб-приложения на Flask с интеграцией Flask-Admin и темой AdminLTE3 для удобной и стильной административной панели.
 
----![2025-06-16_18-32](https://github.com/user-attachments/assets/889fd8f1-129a-4d5b-aa67-ee189fded0f1)
-![2025-06-16_18-32](https://github.com/user-attachments/assets/889fd8f1-129a-4d5b-aa67-ee189fded0f1)
-![2025-06-16_18-32_1](https://github.com/user-attachments/assets/d4e852e4-8538-48d9-a44c-95f08f29661a)
-![2025-06-16_18-32_1](https://github.com/user-attachments/assets/d4e852e4-8538-48d9-a44c-95f08f29661a)
+
+
+<p align="center">
+  <img src="https://github.com/user-attachments/assets/889fd8f1-129a-4d5b-aa67-ee189fded0f1" alt="dd_DeWatermark" width="400" />
+</p>
+
+<p align="center">
+  <img src="https://github.com/user-attachments/assets/d4e852e4-8538-48d9-a44c-95f08f29661a" alt="dd_DeWatermark" width="400" />
+</p>
+
 
 
 ## Особенности
