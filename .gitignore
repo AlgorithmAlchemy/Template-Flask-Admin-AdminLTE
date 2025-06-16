@@ -1,0 +1,228 @@
+# -------------------------
+# Python bytecode & cache
+# -------------------------
+__pycache__/
+__pycache__
+*/__pycache__/
+__pycache__/**/
+**/__pycache__/
+*.py[cod]
+*$py.class
+*.pyo
+*.pyd
+*.pyc
+
+
+# Common typo/mistake variants
+pycache/
+PyCache/
+pycahce/
+PYCACHE/
+.PYCACHE/
+.cache/
+.cache/**/
+
+# -------------------------
+# C extensions / builds
+# -------------------------
+*.so
+*.dll
+*.dylib
+*.o
+*.a
+
+# -------------------------
+# Virtualenvs / Python environments
+# -------------------------
+.env
+.venv
+env/
+venv/
+ENV/
+env.bak/
+venv.bak/
+.venv.bak/
+env.bak/
+python_env/
+venv_env/
+
+# -------------------------
+# Packaging
+# -------------------------
+.Python
+build/
+dist/
+parts/
+sdist/
+wheels/
+downloads/
+.eggs/
+*.egg
+*.egg-info/
+lib/
+lib64/
+var/
+share/python-wheels/
+.installed.cfg
+MANIFEST
+
+# -------------------------
+# Logs & Installer files
+# -------------------------
+*.log
+pip-log.txt
+pip-delete-this-directory.txt
+
+# -------------------------
+# PyInstaller
+# -------------------------
+*.spec
+*.manifest
+
+# -------------------------
+# Unit test / Coverage
+# -------------------------
+.tox/
+.nox/
+.pytest_cache/
+.coverage
+.coverage.*
+*.cover
+*.py,cover
+nosetests.xml
+coverage.xml
+htmlcov/
+.hypothesis/
+.coverage_cache/
+
+# -------------------------
+# Type checkers
+# -------------------------
+.mypy_cache/
+.dmypy.json
+.dmypy.json
+.pytype/
+.pyre/
+.ruff_cache/
+
+# -------------------------
+# Jupyter / IPython
+# -------------------------
+.ipynb_checkpoints
+profile_default/
+ipython_config.py
+
+# -------------------------
+# Documentation
+# -------------------------
+docs/_build/
+site/
+
+# -------------------------
+# IDEs
+# -------------------------
+.idea
+.idea/
+.vscode/
+.spyderproject
+.spyproject
+.ropeproject
+
+# -------------------------
+# Build tools / dependency managers
+# -------------------------
+.pybuilder/
+target/
+python-build/
+.pdm-build/
+.pdm-python
+.pdm.toml
+pdm.lock
+Pipfile.lock
+poetry.lock
+
+# -------------------------
+# pyenv
+# -------------------------
+.python-version
+
+# -------------------------
+# PEP 582
+# -------------------------
+__pypackages__/
+
+# -------------------------
+# Frameworks
+# -------------------------
+# Django
+local_settings.py
+db.sqlite3
+db.sqlite3-journal
+
+# Flask
+instance/
+.webassets-cache
+
+# Scrapy
+.scrapy
+
+# Celery
+celerybeat-schedule
+celerybeat.pid
+
+# SageMath
+*.sage.py
+
+# -------------------------
+# PyPI / Private config
+# -------------------------
+.pypirc
+
+# -------------------------
+# Custom project crap
+# -------------------------
+.DS_Store
+Thumbs.db
+*.swp
+*.swo
+*.tmp
+*~
+*.bak
+
+# -------------------------
+# -------------------------
+# SQLite temporary and ShowYourWork database files
+
+_showyourwork.sqlite
+_showyourwork.sqlite-journal
+_showyourwork.sqlite-wal
+_showyourwork.sqlite-shm
+_showyourwork.*
+showyourwork.sqlite
+showyourwork.sqlite-journal
+showyourwork.sqlite-wal
+showyourwork.sqlite-shm
+*.sqlite
+*.sqlite3
+
+# -------------------------
+# Translations
+# -------------------------
+*.mo
+*.pot
+
+# -------------------------
+# Cython debug symbols
+# -------------------------
+cython_debug/
+
+# -------------------------
+# Example custom ignored file
+# -------------------------
+/data/
+/Session
+/photos
+/module/chat_parser/Session
+/module/Inviter/session
+/module/Inviter/session_old
+/instance

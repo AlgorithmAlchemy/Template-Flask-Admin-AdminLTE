@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8" />
+    <title>Админка AdminLTE</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <!-- Подключаем CSS AdminLTE -->
+    <link rel="stylesheet" href="{{ url_for('static', filename='adminlte/css/adminlte.min.css') }}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='adminlte/plugins/fontawesome-free/css/all.min.css') }}">
+</head>
+<body class="hold-transition sidebar-mini">
+<div class="wrapper">c
+
+    <!-- Здесь можно вставить шапку / меню -->
+
+    <div class="content-wrapper" style="margin-left: 0px;">
+        <section class="content-header">
+            <h1>Добро пожаловать в админку</h1>
+        </section>
+
+        <section class="content">
+            <p>Содержимое страницы админки.</p>
+        </section>
+    </div>
+
+    <!-- Здесь можно вставить футер -->
+
+</div>
+
+<!-- Скрипты AdminLTE -->
+<script src="{{ url_for('static', filename='adminlte/plugins/jquery/jquery.min.js') }}"></script>
+<script src="{{ url_for('static', filename='adminlte/plugins/bootstrap/js/bootstrap.bundle.min.js') }}"></script>
+<script src="{{ url_for('static', filename='adminlte/js/adminlte.min.js') }}"></script>
+</body>
+</html>
+
