@@ -1,6 +1,6 @@
 from flask import Flask
 from flask_sqlalchemy import SQLAlchemy
-from flask_admin import Admin, expose, AdminIndexView
+from flask_admin import Admin, expose, AdminIndexView, BaseView
 from flask_adminlte3 import AdminLTE3
 from flask_admin.contrib.sqla import ModelView
 
@@ -8,6 +8,13 @@ class MyAdminIndexView(AdminIndexView):
     @expose('/')
     def index(self):
         return self.render('admin_layout.html')
+
+
+class DashboardView(BaseView):
+    @expose('/')
+    def index(self):
+        return self.render('dashboard.html')  # Твой шаблон с графиками
+
 
 app = Flask(__name__)
 app.config['SECRET_KEY'] = 'secret-key'
@@ -35,6 +42,7 @@ with app.app_context():
 
 # Настройка Flask-Admin
 admin = Admin(app, name='AdminLTE Panel', index_view=MyAdminIndexView())
+admin.add_view(DashboardView(name='Dashboard', endpoint='dashboard'))
 admin.add_view(ModelView(User, db.session))
 
 if __name__ == '__main__':
