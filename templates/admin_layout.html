@@ -3,48 +3,12 @@
 {% block body %}
 <div class="content-wrapper p-3">
     <div class="container-fluid">
-        <h1 class="mb-4">Админ-панель</h1>
-
-        <div class="row">
-            <div class="col-md-6">
-                <div class="card card-primary">
-                    <div class="card-header">
-                        <h3 class="card-title">График посещений</h3>
-                    </div>
-                    <div class="card-body">
-                        <canvas id="visitsChart" height="200"></canvas>
-                    </div>
-                </div>
+        <h1 class="mb-4">Добро пожаловать в AdminLTE 3</h1>
+        <div class="card">
+            <div class="card-body">
+                <p>Это дашборд Flask-Admin с темой AdminLTE3.</p>
             </div>
         </div>
     </div>
 </div>
-
-<!-- JS: Chart.js и скрипт графика -->
-<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
-<script>
-    const ctx = document.getElementById('visitsChart').getContext('2d');
-    new Chart(ctx, {
-        type: 'line',
-        data: {
-            labels: ['Пн', 'Вт', 'Ср', 'Чт', 'Пт', 'Сб', 'Вс'],
-            datasets: [{
-                label: 'Посещения',
-                data: [120, 90, 150, 80, 200, 300, 250],
-                borderColor: 'rgba(60,141,188,1)',
-                backgroundColor: 'rgba(60,141,188,0.2)',
-                fill: true,
-                tension: 0.3
-            }]
-        },
-        options: {
-            responsive: true,
-            scales: {
-                y: {
-                    beginAtZero: true
-                }
-            }
-        }
-    });
-</script>
 {% endblock %}
