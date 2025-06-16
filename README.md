@@ -5,13 +5,10 @@
 
 
 
-<p align="center">
+<div style="display: flex; justify-content: space-between; max-width: 820px; margin: 0 auto;">
   <img src="https://github.com/user-attachments/assets/889fd8f1-129a-4d5b-aa67-ee189fded0f1" alt="dd_DeWatermark" width="400" />
-</p>
-
-<p align="center">
   <img src="https://github.com/user-attachments/assets/d4e852e4-8538-48d9-a44c-95f08f29661a" alt="dd_DeWatermark" width="400" />
-</p>
+</div>
 
 
 
