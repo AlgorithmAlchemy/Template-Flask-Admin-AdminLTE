@@ -4,6 +4,7 @@ from flask_admin import Admin, expose, AdminIndexView, BaseView
 from flask_adminlte3 import AdminLTE3
 from flask_admin.contrib.sqla import ModelView
 
+
 class MyAdminIndexView(AdminIndexView):
     @expose('/')
     def index(self):
@@ -24,17 +25,17 @@ app.config['SQLALCHEMY_TRACK_MODIFICATIONS'] = False
 # Выбери тему Bootswatch здесь:
 app.config['FLASK_ADMIN_SWATCH'] = 'cerulean'  # например, cerulean, flatly, darkly и др.
 
-
-
 # Подключаем расширения
 db = SQLAlchemy(app)
 AdminLTE3(app)  # ← Вот и вся магия
+
 
 # Пример модели
 class User(db.Model):
     id = db.Column(db.Integer, primary_key=True)
     name = db.Column(db.String(64))
     email = db.Column(db.String(120))
+
 
 # Создаём таблицы
 with app.app_context():
