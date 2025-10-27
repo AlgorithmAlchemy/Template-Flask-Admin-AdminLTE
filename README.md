@@ -4,6 +4,7 @@
 
 **Read this in other languages:** [Русский (README.md)](README_ru.md)
 
+---
 
 This is a Flask web application template with Flask-Admin integration and the AdminLTE3 theme.
 

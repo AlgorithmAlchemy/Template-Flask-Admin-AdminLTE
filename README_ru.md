@@ -4,6 +4,7 @@
 
 **Read this in other languages:** [English (README.md)](README.md)
 
+---
 
 Это шаблон веб-приложения на Flask с интеграцией Flask-Admin и темой AdminLTE3
 
