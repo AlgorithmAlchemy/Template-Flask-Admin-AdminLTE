@@ -1,55 +1,55 @@
-# Проект Flask-Admin с темой AdminLTE3
+# Flask-Admin Project with AdminLTE3 Theme
 
-Это шаблон веб-приложения на Flask с интеграцией Flask-Admin и темой AdminLTE3 для удобной и стильной административной
-панели.
+`⭐️ Thanks to everyone who has starred the project — it really means a lot!`
+
+**Read this in other languages:** [Русский (README.md)](README_ru.md)
 
 
+This is a Flask web application template with Flask-Admin integration and the AdminLTE3 theme.
 
 <div style="display: flex; justify-content: space-between; max-width: 820px; margin: 0 auto;">
   <img src="https://github.com/user-attachments/assets/889fd8f1-129a-4d5b-aa67-ee189fded0f1" alt="dd_DeWatermark" width="400" />
   <img src="https://github.com/user-attachments/assets/d4e852e4-8538-48d9-a44c-95f08f29661a" alt="dd_DeWatermark" width="400" />
 </div>
 
-## Особенности
+## Features
 
-- Flask 2.x
-- SQLAlchemy для работы с базой данных SQLite
-- Flask-Admin для управления моделями
-- Интеграция темы AdminLTE3 для современного интерфейса
-- Пример модели `User` с полями `id`, `name`, `email`
-- Вкладка Dashboard с разными типами графиков на Chart.js
+* Flask 2.x
+* SQLAlchemy for SQLite database management
+* Flask-Admin for model administration
+* AdminLTE3 theme integration for a modern UI
+* Example `User` model with `id`, `name`, and `email` fields
+* Dashboard page with multiple Chart.js visualizations
 
 ---
 
-## Структура проекта
+## Project Structure
 
 ```
-
 /project-root
-├── app.py                 # Основной файл приложения
-├── templates/             # Шаблоны Jinja2
-│   ├── admin\_layout.html  # Шаблон дашборда с AdminLTE3
+├── app.py                 # Main application file
+├── templates/             # Jinja2 templates
+│   ├── admin_layout.html  # AdminLTE3 dashboard layout
 │   └── ...
-├── static/                # Статические файлы (CSS, JS, картинки)
-├── data/                  # Папка для данных/баз данных
-│   └── mydatabase.db      # SQLite база (создаётся автоматически)
-├── requirements.txt       # Список зависимостей
-└── README.md              # Документация проекта
-
-````
+├── static/                # Static files (CSS, JS, images)
+├── data/                  # Data/database directory
+│   └── mydatabase.db      # SQLite database (created automatically)
+├── requirements.txt       # Dependency list
+└── README.md              # Project documentation
+```
 
 ---
 
-## Установка
+## Installation
 
-1. Клонируйте репозиторий:
+1. Clone the repository:
 
 ```bash
-git clone <URL_репозитория>
+git clone <repository_URL>
 cd project-root
-````
+```
 
-2. Создайте виртуальное окружение и активируйте его:
+2. Create and activate a virtual environment:
 
 ```bash
 python -m venv venv
@@ -57,7 +57,7 @@ source venv/bin/activate    # Linux/MacOS
 venv\Scripts\activate       # Windows
 ```
 
-3. Установите зависимости:
+3. Install dependencies:
 
 ```bash
 pip install -r requirements.txt
@@ -65,44 +65,16 @@ pip install -r requirements.txt
 
 ---
 
-## Запуск
+## Run the Application
 
 ```bash
 python app.py
 ```
 
-По умолчанию сервер будет доступен по адресу: [http://127.0.0.1:5000](http://127.0.0.1:5000)
+By default, the server will be available at: [http://127.0.0.1:5000](http://127.0.0.1:5000)
 
 ---
 
-## Использование
+## Contact
 
-* Админка доступна по корневому URL (`/admin`)
-* В админке можно управлять пользователями (CRUD для модели User)
-* Вкладка Dashboard отображает разные типы графиков с помощью Chart.js
-
----
-
-## Добавление пустых папок в Git
-
-Git не хранит пустые папки, поэтому для их фиксации создайте в них файл `.gitkeep`:
-
-```bash
-touch data/.gitkeep
-touch static/.gitkeep
-```
-
----
-
-## Зависимости
-
-* Flask
-* Flask-SQLAlchemy
-* Flask-Admin
-* Flask-AdminLTE3 (если используется)
-
----
-
-## Контакты
-
-Автор: AlgoritmAlchemy
+Author: AlgorithmAlchemy
