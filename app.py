@@ -14,7 +14,7 @@ class MyAdminIndexView(AdminIndexView):
 class DashboardView(BaseView):
     @expose('/')
     def index(self):
-        return self.render('dashboard.html')  # Твой шаблон с графиками
+        return self.render('dashboard.html')
 
 
 app = Flask(__name__)
@@ -22,26 +22,24 @@ app.config['SECRET_KEY'] = 'secret-key'
 app.config['SQLALCHEMY_DATABASE_URI'] = 'sqlite:///data.db'
 app.config['SQLALCHEMY_TRACK_MODIFICATIONS'] = False
 
-# Выбери тему Bootswatch здесь:
-app.config['FLASK_ADMIN_SWATCH'] = 'cerulean'  # например, cerulean, flatly, darkly и др.
+app.config['FLASK_ADMIN_SWATCH'] = 'cerulean'
 
-# Подключаем расширения
 db = SQLAlchemy(app)
-AdminLTE3(app)  # ← Вот и вся магия
+AdminLTE3(app)
 
 
-# Пример модели
+# Model example
 class User(db.Model):
     id = db.Column(db.Integer, primary_key=True)
     name = db.Column(db.String(64))
     email = db.Column(db.String(120))
 
 
-# Создаём таблицы
+# Create table
 with app.app_context():
     db.create_all()
 
-# Настройка Flask-Admin
+# Settings Flask-Admin
 admin = Admin(app, name='AdminLTE Panel', index_view=MyAdminIndexView())
 admin.add_view(DashboardView(name='Dashboard', endpoint='dashboard'))
 admin.add_view(ModelView(User, db.session))
